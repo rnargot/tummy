@@ -6,6 +6,8 @@ import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useRef, useLayoutEffect } from "react";
 import { useTransform, useScroll, useTime } from "framer-motion";
 import { degreesToRadians, progress, mix } from "popmotion";
+import toast from "./toast.png";
+import Image from 'next/image'
 
   const color = "#111111";
   const Icosahedron = () => (
@@ -78,26 +80,25 @@ import { degreesToRadians, progress, mix } from "popmotion";
       <motion.div 
         initial={{opacity:0, y:-50}}
         animate={{opacity:1, y:0}}
-        transition={{duration:1}}>
-        <div className='title'>my tummy hurts</div>
-      </motion.div>
-      <motion.div 
-        initial={{opacity:0, y:-50}}
-        animate={{opacity:1, y:0}}
         transition={{duration:2}}>
         <div className='title'>my tummy rlly hurts</div>
       </motion.div>
-      <motion.div 
-        initial={{opacity:0, y:-50}}
-        animate={{opacity:1, y:0}}
-        transition={{duration:3}}>
-        <div className='title'>my tummy rlly rlly hurts</div>
-      </motion.div>
-      <div className="container">
+
+
+    <div className="container">
       <Canvas gl={{ antialias: false }}>
         <Scene />
       </Canvas>
     </div>
+    <a href="https://mrasco.cool/" target="_blank" rel="noreferrer">
+            <Image className='icon'
+               src={toast}
+               alt="toast"
+                width={75}
+                height={75}
+              />
+      </a>
+
     </main>
   )
 }

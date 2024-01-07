@@ -9,7 +9,9 @@
 }
 
 .container {
-  position: fixed;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -20,4 +22,8 @@ canvas {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
   image-rendering: optimize-contrast;
+}
+.overlay {
+  position: absolute;
+  z-index: 1;
 }
