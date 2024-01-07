@@ -1,0 +1,16 @@
+@import "fonts.css";
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-sans: DINdong, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    background-color: aliceblue;
+
+}
+@font-face {
+  font-family: 'DINdong';
+  src:
+    url('./fonts/DINdong/DINdong.woff2') format('woff2 supports variations'),
+    url('./fonts/DINdong/DINdong.woff2') format('woff2-variations');
+  font-weight: 300 900;
+}
